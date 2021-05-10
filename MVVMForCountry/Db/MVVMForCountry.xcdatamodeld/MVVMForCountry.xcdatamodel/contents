@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Country" representedClassName="CountryMO" syncable="YES" codeGenerationType="class">
+        <attribute name="alpha3code" optional="YES" attributeType="String"/>
+        <attribute name="flagURL" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="population" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="borders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CountryDetails" inverseName="borders" inverseEntity="CountryDetails"/>
+        <relationship name="countryDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CountryDetails" inverseName="country" inverseEntity="CountryDetails"/>
+        <relationship name="nameTranslations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NameTranslation" inverseName="country" inverseEntity="NameTranslation"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="alpha3code"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CountryDetails" representedClassName="CountryDetailsMO" syncable="YES" codeGenerationType="class">
+        <attribute name="capital" optional="YES" attributeType="String"/>
+        <relationship name="borders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Country" inverseName="borders" inverseEntity="Country"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="countryDetails" inverseEntity="Country"/>
+        <relationship name="currencies" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Currency" inverseName="countryDetails" inverseEntity="Currency"/>
+    </entity>
+    <entity name="Currency" representedClassName="CurrencyMO" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="symbol" optional="YES" attributeType="String"/>
+        <relationship name="countryDetails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CountryDetails" inverseName="currencies" inverseEntity="CountryDetails"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="code"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="NameTranslation" representedClassName="NameTranslationMO" syncable="YES" codeGenerationType="class">
+        <attribute name="locale" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="nameTranslations" inverseEntity="Country"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="locale"/>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Country" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="CountryDetails" positionX="-54" positionY="45" width="128" height="103"/>
+        <element name="Currency" positionX="-36" positionY="63" width="128" height="103"/>
+        <element name="NameTranslation" positionX="-27" positionY="90" width="128" height="88"/>
+    </elements>
+</model>

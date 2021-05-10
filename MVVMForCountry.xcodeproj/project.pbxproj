@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,18 @@
 		607200A52648FD6500EF125B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607200A32648FD6500EF125B /* LaunchScreen.storyboard */; };
 		607200B02648FD6600EF125B /* MVVMForCountryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607200AF2648FD6600EF125B /* MVVMForCountryTests.swift */; };
 		607200BB2648FD6600EF125B /* MVVMForCountryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607200BA2648FD6600EF125B /* MVVMForCountryUITests.swift */; };
+		607200CC264901DD00EF125B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607200CB264901DD00EF125B /* CoreDataHelper.swift */; };
+		607200D9264904E100EF125B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607200D8264904E100EF125B /* CoreDataStack.swift */; };
+		607200E22649171200EF125B /* LazyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607200E12649171200EF125B /* LazyList.swift */; };
+		607200E726492A4200EF125B /* CcancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607200E626492A4200EF125B /* CcancelBag.swift */; };
+		607200EC26492B2400EF125B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607200EB26492B2400EF125B /* Helper.swift */; };
+		607200F226492CDC00EF125B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607200F126492CDC00EF125B /* Models.swift */; };
+		607200FB26492E2E00EF125B /* EnvironmentOverrides in Frameworks */ = {isa = PBXBuildFile; productRef = 607200FA26492E2E00EF125B /* EnvironmentOverrides */; };
+		6072010126492E7700EF125B /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 6072010026492E7700EF125B /* ViewInspector */; };
+		60720106264932AA00EF125B /* Modle+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60720105264932AA00EF125B /* Modle+CoreData.swift */; };
+		607202C82649545D00EF125B /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607202C72649545D00EF125B /* CountryListView.swift */; };
+		607202D2264954E200EF125B /* ExampleApplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607202D1264954E200EF125B /* ExampleApplyModel.swift */; };
+		607202D8264959A900EF125B /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607202D7264959A900EF125B /* CountryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,16 @@
 		607200B62648FD6600EF125B /* MVVMForCountryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMForCountryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607200BA2648FD6600EF125B /* MVVMForCountryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMForCountryUITests.swift; sourceTree = "<group>"; };
 		607200BC2648FD6600EF125B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607200CB264901DD00EF125B /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		607200D8264904E100EF125B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		607200E12649171200EF125B /* LazyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyList.swift; sourceTree = "<group>"; };
+		607200E626492A4200EF125B /* CcancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CcancelBag.swift; sourceTree = "<group>"; };
+		607200EB26492B2400EF125B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		607200F126492CDC00EF125B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		60720105264932AA00EF125B /* Modle+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Modle+CoreData.swift"; sourceTree = "<group>"; };
+		607202C72649545D00EF125B /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
+		607202D1264954E200EF125B /* ExampleApplyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApplyModel.swift; sourceTree = "<group>"; };
+		607202D7264959A900EF125B /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607200FB26492E2E00EF125B /* EnvironmentOverrides in Frameworks */,
+				6072010126492E7700EF125B /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,13 +125,14 @@
 		607200942648FD6400EF125B /* MVVMForCountry */ = {
 			isa = PBXGroup;
 			children = (
-				607200952648FD6400EF125B /* AppDelegate.swift */,
-				607200972648FD6400EF125B /* SceneDelegate.swift */,
-				607200992648FD6400EF125B /* ContentView.swift */,
+				607202CD2649548600EF125B /* MainClass */,
+				607202CC2649546600EF125B /* Helper */,
+				607202C62649543A00EF125B /* UI */,
+				607200F026492CA000EF125B /* Model */,
+				607200DD2649102D00EF125B /* Db */,
 				6072009E2648FD6500EF125B /* Assets.xcassets */,
 				607200A32648FD6500EF125B /* LaunchScreen.storyboard */,
 				607200A62648FD6500EF125B /* Info.plist */,
-				6072009B2648FD6400EF125B /* MVVMForCountry.xcdatamodeld */,
 				607200A02648FD6500EF125B /* Preview Content */,
 			);
 			path = MVVMForCountry;
@@ -139,6 +164,63 @@
 			path = MVVMForCountryUITests;
 			sourceTree = "<group>";
 		};
+		607200DD2649102D00EF125B /* Db */ = {
+			isa = PBXGroup;
+			children = (
+				6072009B2648FD6400EF125B /* MVVMForCountry.xcdatamodeld */,
+				607200CB264901DD00EF125B /* CoreDataHelper.swift */,
+				607200D8264904E100EF125B /* CoreDataStack.swift */,
+			);
+			path = Db;
+			sourceTree = "<group>";
+		};
+		607200F026492CA000EF125B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				607200F126492CDC00EF125B /* Models.swift */,
+				60720105264932AA00EF125B /* Modle+CoreData.swift */,
+				607202D1264954E200EF125B /* ExampleApplyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		607202C62649543A00EF125B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				607202D62649598200EF125B /* Component */,
+				607200992648FD6400EF125B /* ContentView.swift */,
+				607202C72649545D00EF125B /* CountryListView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		607202CC2649546600EF125B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				607200E12649171200EF125B /* LazyList.swift */,
+				607200E626492A4200EF125B /* CcancelBag.swift */,
+				607200EB26492B2400EF125B /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		607202CD2649548600EF125B /* MainClass */ = {
+			isa = PBXGroup;
+			children = (
+				607200952648FD6400EF125B /* AppDelegate.swift */,
+				607200972648FD6400EF125B /* SceneDelegate.swift */,
+			);
+			path = MainClass;
+			sourceTree = "<group>";
+		};
+		607202D62649598200EF125B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				607202D7264959A900EF125B /* CountryCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +237,10 @@
 			dependencies = (
 			);
 			name = MVVMForCountry;
+			packageProductDependencies = (
+				607200FA26492E2E00EF125B /* EnvironmentOverrides */,
+				6072010026492E7700EF125B /* ViewInspector */,
+			);
 			productName = MVVMForCountry;
 			productReference = 607200922648FD6400EF125B /* MVVMForCountry.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +312,10 @@
 				Base,
 			);
 			mainGroup = 607200892648FD6300EF125B;
+			packageReferences = (
+				607200F926492E2E00EF125B /* XCRemoteSwiftPackageReference "EnvironmentOverrides" */,
+				607200FF26492E7700EF125B /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 607200932648FD6400EF125B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,10 +359,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607200CC264901DD00EF125B /* CoreDataHelper.swift in Sources */,
 				6072009D2648FD6400EF125B /* MVVMForCountry.xcdatamodeld in Sources */,
 				607200962648FD6400EF125B /* AppDelegate.swift in Sources */,
+				607200D9264904E100EF125B /* CoreDataStack.swift in Sources */,
 				607200982648FD6400EF125B /* SceneDelegate.swift in Sources */,
+				607200EC26492B2400EF125B /* Helper.swift in Sources */,
+				607202D8264959A900EF125B /* CountryCell.swift in Sources */,
+				607200E22649171200EF125B /* LazyList.swift in Sources */,
+				607200E726492A4200EF125B /* CcancelBag.swift in Sources */,
 				6072009A2648FD6400EF125B /* ContentView.swift in Sources */,
+				607202D2264954E200EF125B /* ExampleApplyModel.swift in Sources */,
+				607200F226492CDC00EF125B /* Models.swift in Sources */,
+				60720106264932AA00EF125B /* Modle+CoreData.swift in Sources */,
+				607202C82649545D00EF125B /* CountryListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +701,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		607200F926492E2E00EF125B /* XCRemoteSwiftPackageReference "EnvironmentOverrides" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/EnvironmentOverrides.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+		607200FF26492E7700EF125B /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		607200FA26492E2E00EF125B /* EnvironmentOverrides */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 607200F926492E2E00EF125B /* XCRemoteSwiftPackageReference "EnvironmentOverrides" */;
+			productName = EnvironmentOverrides;
+		};
+		6072010026492E7700EF125B /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 607200FF26492E7700EF125B /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6072009B2648FD6400EF125B /* MVVMForCountry.xcdatamodeld */ = {
